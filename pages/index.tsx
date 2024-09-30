@@ -40,7 +40,7 @@ export default function Home() {
           {menuItems.map((item) => (
             <li key={item.id}>
               <a
-                href="#"
+                href="/registro"
                 className={`
                 text-white 
                 font-medium 
@@ -143,6 +143,12 @@ export default function Home() {
       <Button variant="destructive" className="bg-yellow-400 z-10 w-lg">www.ricardobarona.com.co</Button>
       </div>
       </div>
+      <footer className="text-center my-4 p-4 bg-sky-700">
+      NOVA Champions League 
+      <br />
+      2024
+
+      </footer>
 
      
     </div>
