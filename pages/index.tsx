@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button"
 import Logo from "./imgs/nova pilots.png"
 import { FaRegUserCircle } from "react-icons/fa";
 import NOVACH from "./imgs/nova champions league.png"
+import NIÑO from "./imgs/niño.png"
 
 
 import { useState } from 'react'
@@ -70,16 +72,26 @@ export default function Home() {
         <Image src={NOVACH} alt="Logo" width={500} height={500} />
 
       </div>
-      <div className="flex flex-col h-screen justify-center items-center  gap-6 bg-sky-700 relative">
+      <div className="flex flex-col h-[70vh] justify-center items-center  gap-6 bg-sky-700 relative">
         <div className="absolute top-0 left-0 right-0 w-full h-[70%] bg-white rounded-b-full"></div>
-      
-        <p className="z-10 text-gray-700 text-xl">¿Qué es <span className="text-yellow-400">NOVA</span> Champions League?</p>
-        <p className="max-w-screen-md color z-10 text-gray-900  text-lg">
+
+        <p className="z-10 text-gray-700 text-3xl">¿Qué es <span className="text-yellow-400">NOVA</span> Champions League?</p>
+        <p className="max-w-screen-md color z-10 text-gray-900  text-xl font-bold ">
           NOVA Champions League es un torneo de robótica en la que niños y jóvenes se ponen a prueba en retos aleatorios,
-           donde el tra-bajo en equipo, el manejo de las emocio-nes, la creatividad, el ingenio y la inventiva, les permiten alcanzar nuevos niveles.
+          donde el tra-bajo en equipo, el manejo de las emocio-nes, la creatividad, el ingenio y la inventiva, les permiten alcanzar nuevos niveles.
         </p>
-        <button className="bg-yellow-600 rounded-lg w-sm">Inscribirme</button>
-        hola
+        <Button variant="destructive" className="bg-yellow-400 z-10 w-lg">Inscribirme</Button>
+
+      </div>
+      <div className="h-[50vh] flex">
+        <div className="w-[50%] "><Image src={NIÑO} height={100} width={100} alt="niño " className="w-full h-full" /></div>
+        <div className="w-[50%] bg-yellow-500 flex flex-col">
+          <p> ¿Por qué participar?</p>
+          <p>Los chicos de hoy en día están cada vez más atados a las soluciones fáciles o es-tructuradas perdiendo ingenio e inventiva.
+            El NOVA Champions League más que un evento de robótica es un evento para gene-rar soluciones poniendo a prueba cada idea, construyendo nuevas formas de ver el mundo y
+            permitiendo a los chicos encontrar el camino adecuado a cada situación. </p>
+        </div>
+
       </div>
 
     </div>
