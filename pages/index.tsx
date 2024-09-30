@@ -5,6 +5,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import NOVACH from "./imgs/nova champions league.png"
 import NIÑO from "./imgs/children-playing-with-lego-playing-room.jpg"
 import lego from "./imgs/cubos.png"
+import ADone from "./imgs/adone.png"
 
 
 import { useState } from 'react'
@@ -85,7 +86,7 @@ export default function Home() {
 
       </div>
       <div className="h-[50vh] flex">
-        <div className="w-[50%] "><Image src={NIÑO} height={100} width={100} alt="niño " className="w-full h-full"  /></div>
+        <div className="w-[50%] "><Image src={NIÑO} height={100} width={100} alt="niño " className="w-full h-full" /></div>
         <div className="w-[50%] bg-yellow-500 flex flex-col">
           <p> ¿Por qué participar?</p>
           <p>Los chicos de hoy en día están cada vez más atados a las soluciones fáciles o es-tructuradas perdiendo ingenio e inventiva.
@@ -95,45 +96,55 @@ export default function Home() {
 
       </div>
       <div className="h-[50vh] flex  bg-gray-500 justify-evenly items-center ">
-       <Image src={Logo} alt="Logo" width={200} height={200} />
+        <Image src={Logo} alt="Logo" width={200} height={200} />
         <div className=" flex flex-col w-[70%] justify-center items-center">
           <p> NOVA se basa en la experimentación como eje de apren-</p>
           <p>dizaje permitiendo a los niños y jóvenes alcanzar metas  </p>
           <p>
-          con su propio esfuerzo y planteamiento de solución.
+            con su propio esfuerzo y planteamiento de solución.
           </p>
         </div>
 
       </div>
       <div className="h-[50vh] flex">
-      
-        
-          <div className="w-[40%] ">
+
+
+        <div className="w-[40%] ">
           <Image src={lego} height={100} width={100} alt="niño " className="w-full h-full" /></div>
         <div className="w-[60%]  flex flex-col items-center justify-center"> <p> NOVA se basa en la experimentación como eje de apren-</p>
           <p>dizaje permitiendo a los niños y jóvenes alcanzar metas  </p>
           <p>
-          con su propio esfuerzo y planteamiento de solución.
-          </p> 
-       
-          
+            con su propio esfuerzo y planteamiento de solución.
+          </p>
+
+
         </div>
- </div>
-        <div className="text-center flex flex-col justify-evenly gap-4 p-5 bg-yellow-600 text-white text-xl">
- <p className="text-3xl">
- ¿Quiénes organizan el NOVA Champions League?
- </p>
- <p>
- NOVA CL es organizado por AdOne SAS y Ricardo Barona.
- </p>
- <p>
- AdOne SAS se dedica a la creación de marcas, eventos y marketing digital, mientras Ricardo Barona <br />
- se dedica a la creación de plataformas digitales, educación, gamificación y videojuegos.  
- </p>
- <p>
- A este esfuerzo se unen los colegios para alcanzar nuevas fronteras de la educación significativa.
- </p>
       </div>
+      <div className="text-center flex flex-col justify-evenly gap-4 p-5 bg-yellow-600 text-white text-xl">
+        <p className="text-3xl">
+          ¿Quiénes organizan el NOVA Champions League?
+        </p>
+        <p>
+          NOVA CL es organizado por AdOne SAS y Ricardo Barona.
+        </p>
+        <p>
+          AdOne SAS se dedica a la creación de marcas, eventos y marketing digital, mientras Ricardo Barona <br />
+          se dedica a la creación de plataformas digitales, educación, gamificación y videojuegos.
+        </p>
+        <p>
+          A este esfuerzo se unen los colegios para alcanzar nuevas fronteras de la educación significativa.
+        </p>
+      </div>
+      <div className="flex justify-evenly  items-center flex-col">
+        <Image src={ADone} alt="Logo" width={400} height={400} />  
+            <p className="m-4 ">Para conocer más visite los sitios web de nuestros organizadores:  </p>
+      <div  className="flex justify-evenly gap-10 items-center">
+         <Button variant="destructive" className="bg-yellow-400 z-10 w-lg">www.adone.com.co</Button>
+      <Button variant="destructive" className="bg-yellow-400 z-10 w-lg">www.ricardobarona.com.co</Button>
+      </div>
+      </div>
+
+     
     </div>
   );
 }
