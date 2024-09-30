@@ -90,7 +90,7 @@ export default function Home() {
 
       </div>
       <div className="h-[50vh] flex  bg-gray-500 justify-evenly items-center ">
-        <Image src={grup} alt="Logo" width={250} height={250} className="animate-bounce" />
+        <Image src={grup} alt="Logo" width={250} height={250} />
         <div className=" flex flex-col w-[70%] justify-center items-center text-white m-4">
           <p> NOVA se basa en la experimentación como eje de apren-</p>
           <p>dizaje permitiendo a los niños y jóvenes alcanzar metas  </p>
