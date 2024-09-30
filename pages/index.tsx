@@ -40,7 +40,7 @@ export default function Home() {
           {menuItems.map((item) => (
             <li key={item.id}>
               <a
-                href="/registro"
+                href={item.text === menuItems[5].text ?"/registro"  : "#" }
                 className={`
                 text-white 
                 font-medium 
