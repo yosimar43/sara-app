@@ -67,7 +67,7 @@ export default function Home() {
         </ul>
         <div className="flex justify-center items-center h-20 " >
 
-          <FaRegUserCircle height={300} width={300} />
+          <FaRegUserCircle size={100}  className="h-lg w-lg text-white"/>
         </div>
       </nav>
       <div className=" flex justify-center items-center h-[65vh] bg-gradient-to-r from-gray-600 from-30 via-gray-400 via-30 to-gray-600 ">

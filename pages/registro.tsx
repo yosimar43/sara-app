@@ -125,6 +125,7 @@ export default function NewAccountForm() {
             Crear Cuenta
           </button>
         </form>
+        <a href="/" className='mt-5 text-center text-xl font-extrabold underline mx-auto block'>Volver al inicio</a>
       </div>
     </div>
   )
