@@ -17,16 +17,16 @@ const menuItems = [
 ]
 import localFont from "next/font/local";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const roboto = localFont({
+//   src: "./fonts/OSWALD-STENCIL.OTF",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const oswal = localFont({
+//   src: "./fonts/ROBOTO-REGULAR.TTF",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export default function Home() {
   const [activeItem, setActiveItem] = useState<number | null>(null)
@@ -93,7 +93,17 @@ export default function Home() {
         </div>
 
       </div>
+      <div className="h-[50vh] flex  bg-gray-500 justify-evenly items-center ">
+       <Image src={Logo} alt="Logo" width={200} height={200} />
+        <div className=" flex flex-col w-[70%] justify-center items-center">
+          <p> NOVA se basa en la experimentación como eje de apren-</p>
+          <p>dizaje permitiendo a los niños y jóvenes alcanzar metas  </p>
+          <p>
+          con su propio esfuerzo y planteamiento de solución.
+          </p>
+        </div>
 
+      </div>
     </div>
   );
 }
