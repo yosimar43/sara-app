@@ -66,7 +66,7 @@ export default function Home() {
       </nav>
       <div className="h-32">d</div>
       <div className=" flex justify-center items-center h-[65vh] bg-gradient-to-r from-gray-600 from-30 via-gray-400 via-30 to-gray-600 ">
-        <Image src={NOVACH} alt="Logo" width={500} height={500} className="h-full w-full" />
+        <Image src={NOVACH} alt="Logo" width={500} height={500} className="h-full w-full " />
 
       </div>
       <div className="flex flex-col h-[70vh] justify-center items-center  gap-6 bg-fondo relative">
@@ -76,7 +76,7 @@ export default function Home() {
           NOVA Champions League es un torneo de robótica en la que niños y jóvenes se ponen a prueba en retos aleatorios,
           donde el tra-bajo en equipo, el manejo de las emocio-nes, la creatividad, el ingenio y la inventiva, les permiten alcanzar nuevos niveles.
         </p>
-        <Button variant="destructive" className="bg-ama z-10 w-lg">Inscribirme</Button>
+        <Button variant="destructive" className="bg-ama z-10 w-lg"><a href="/registro">Inscribirme</a></Button>
 
       </div>
       <div className="h-[50vh] flex text-center wra">
@@ -90,8 +90,8 @@ export default function Home() {
 
       </div>
       <div className="h-[50vh] flex  bg-gray-500 justify-evenly items-center ">
-        <Image src={grup} alt="Logo" width={250} height={250} />
-        <div className=" flex flex-col w-[70%] justify-center items-center text-white">
+        <Image src={grup} alt="Logo" width={250} height={250} className="animate-bounce" />
+        <div className=" flex flex-col w-[70%] justify-center items-center text-white m-4">
           <p> NOVA se basa en la experimentación como eje de apren-</p>
           <p>dizaje permitiendo a los niños y jóvenes alcanzar metas  </p>
           <p>
@@ -104,7 +104,7 @@ export default function Home() {
 
 
 
-        <div className="w-[60%]  flex flex-col items-center justify-evenly">
+        <div className="w-[60%]  flex flex-col items-center justify-evenly m-4">
           <p className="text-4xl text-ama ">¿Qué día se lleva a cabo?</p>
           <p>El NOVA Champions League establece un cronograma con cada colegio. <br />
             Es importante que estén atentos a los comunicados y nuestro sitio web para las fechas y lugares donde nuestros competidores se van a presentar. </p>
@@ -112,7 +112,7 @@ export default function Home() {
 
 
         </div><div className="w-[40%] ">
-          <Image src={lego} height={100} width={100} alt="niño " className="w-full h-full" />
+          <Image src={lego} height={100} width={100} alt="niño " className="w-full h-full"  />
         </div>
       </div>
       <div className="text-center flex flex-col justify-evenly gap-4 p-5 bg-ama text-white text-xl">
