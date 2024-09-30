@@ -27,7 +27,7 @@ export default function Home() {
   const [activeItem, setActiveItem] = useState<number | null>(null)
   return (<>
 
-    <div className=" h-screen text-2xl text-pretty ">
+    <div className=" h-screen text-2xl text-pretty font-bold ">
       <nav className="bg-fondo p-4 flex z-10 justify-evenly gap-4 items-center fixed w-full">
         <Image src={Logo} alt="Logo" width={200} height={200} />
         <ul className="flex justify-center space-x-6">
@@ -104,7 +104,8 @@ export default function Home() {
 
 
 
-        <div className="w-[60%]  flex flex-col items-center justify-center">
+        <div className="w-[60%]  flex flex-col items-center justify-evenly">
+          <p className="text-4xl text-ama ">¿Qué día se lleva a cabo?</p>
           <p>El NOVA Champions League establece un cronograma con cada colegio. <br />
             Es importante que estén atentos a los comunicados y nuestro sitio web para las fechas y lugares donde nuestros competidores se van a presentar. </p>
 
@@ -115,7 +116,7 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center flex flex-col justify-evenly gap-4 p-5 bg-ama text-white text-xl">
-        <p className="text-3xl">
+        <p className="text-3xl text-gray-700">
           ¿Quiénes organizan el NOVA Champions League?
         </p>
         <p>
