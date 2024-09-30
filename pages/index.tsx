@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button"
 import Logo from "./imgs/nova pilots.png"
 import { FaRegUserCircle } from "react-icons/fa";
 import NOVACH from "./imgs/nova champions league.png"
-import NIÑO from "./imgs/niño.png"
+import NIÑO from "./imgs/children-playing-with-lego-playing-room.jpg"
+import lego from "./imgs/cubos.png"
 
 
 import { useState } from 'react'
@@ -31,7 +32,7 @@ import localFont from "next/font/local";
 export default function Home() {
   const [activeItem, setActiveItem] = useState<number | null>(null)
   return (
-    <div className=" h-screen ">
+    <div className=" h-screen text-xl ">
       <nav className="bg-sky-700 p-4 flex justify-evenly gap-4 items-center">
         <Image src={Logo} alt="Logo" width={200} height={200} />
         <ul className="flex justify-center space-x-6">
@@ -68,7 +69,7 @@ export default function Home() {
           <FaRegUserCircle height={300} width={300} />
         </div>
       </nav>
-      <div className=" flex justify-center items-center h-screen bg-gradient-to-r from-gray-600 from-30 via-gray-400 via-30 to-gray-600 ">
+      <div className=" flex justify-center items-center h-[65vh] bg-gradient-to-r from-gray-600 from-30 via-gray-400 via-30 to-gray-600 ">
         <Image src={NOVACH} alt="Logo" width={500} height={500} />
 
       </div>
@@ -84,7 +85,7 @@ export default function Home() {
 
       </div>
       <div className="h-[50vh] flex">
-        <div className="w-[50%] "><Image src={NIÑO} height={100} width={100} alt="niño " className="w-full h-full" /></div>
+        <div className="w-[50%] "><Image src={NIÑO} height={100} width={100} alt="niño " className="w-full h-full"  /></div>
         <div className="w-[50%] bg-yellow-500 flex flex-col">
           <p> ¿Por qué participar?</p>
           <p>Los chicos de hoy en día están cada vez más atados a las soluciones fáciles o es-tructuradas perdiendo ingenio e inventiva.
@@ -103,6 +104,35 @@ export default function Home() {
           </p>
         </div>
 
+      </div>
+      <div className="h-[50vh] flex">
+      
+        
+          <div className="w-[40%] ">
+          <Image src={lego} height={100} width={100} alt="niño " className="w-full h-full" /></div>
+        <div className="w-[60%]  flex flex-col items-center justify-center"> <p> NOVA se basa en la experimentación como eje de apren-</p>
+          <p>dizaje permitiendo a los niños y jóvenes alcanzar metas  </p>
+          <p>
+          con su propio esfuerzo y planteamiento de solución.
+          </p> 
+       
+          
+        </div>
+ </div>
+        <div className="text-center flex flex-col justify-evenly gap-4 p-5 bg-yellow-600 text-white text-xl">
+ <p className="text-3xl">
+ ¿Quiénes organizan el NOVA Champions League?
+ </p>
+ <p>
+ NOVA CL es organizado por AdOne SAS y Ricardo Barona.
+ </p>
+ <p>
+ AdOne SAS se dedica a la creación de marcas, eventos y marketing digital, mientras Ricardo Barona <br />
+ se dedica a la creación de plataformas digitales, educación, gamificación y videojuegos.  
+ </p>
+ <p>
+ A este esfuerzo se unen los colegios para alcanzar nuevas fronteras de la educación significativa.
+ </p>
       </div>
     </div>
   );
