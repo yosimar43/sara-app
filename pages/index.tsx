@@ -27,8 +27,8 @@ export default function Home() {
   const [activeItem, setActiveItem] = useState<number | null>(null)
   return (<>
 
-    <div className=" h-screen text-2xl text-pretty font-bold ">
-      <nav className="bg-fondo p-4 flex z-10 justify-evenly gap-4 items-center fixed w-full">
+    <div className=" h-screen text-2xl text-pretty font-bold relative">
+      <nav className="bg-fondo p-4 flex z-10 justify-evenly gap-4 items-center sticky top-0 w-full">
         <Image src={Logo} alt="Logo" width={200} height={200} />
         <ul className="flex justify-center space-x-6">
           {menuItems.map((item) => (
@@ -64,7 +64,6 @@ export default function Home() {
           <FaRegUserCircle size={90} className="h-lg w-lg text-white" />
         </div>
       </nav>
-      <div className="h-32">d</div>
       <div className=" flex justify-center items-center h-[65vh] bg-gradient-to-r from-gray-600 from-30 via-gray-400 via-30 to-gray-600 ">
         <Image src={NOVACH} alt="Logo" width={500} height={500} className="h-full w-full " />
 
@@ -138,7 +137,7 @@ export default function Home() {
           <Button variant="destructive" className="bg-ama z-10 w-lg"> <a href="http://ricardobarona.com/" target="_blank" rel="noopener noreferrer">www.ricardobarona.com.co</a></Button>
         </div>
       </div>
-      <footer className="text-center my-4 p-4 bg-fondo">
+      <footer className="text-center my-4 p-4 bg-fondo text-white">
         NOVA Champions League
         <br />
         2024

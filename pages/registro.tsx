@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import Image from "next/image";
+import Logo from "./imgs/nova pilots.png"
+
 
 export default function NewAccountForm() {
   const [formData, setFormData] = useState({
@@ -24,8 +27,9 @@ export default function NewAccountForm() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-sky-800 via-sky-700 to-blue-600">
       <div className="w-full max-w-md p-8 m-4 bg-white rounded-lg shadow-lg">
+      <Image src={Logo} alt="Logo" width={500} height={500}  />
         <h2 className="mb-6 text-2xl font-bold text-center text-gray-800">Cuenta Nueva</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="relative">
