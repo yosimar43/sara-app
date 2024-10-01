@@ -4,6 +4,17 @@ import AppMenu from "@/components/ui/AppMenu";
 import Image from 'next/image';
 import niñosimg from "@/imgs/high-angle-group-childrens.jpg"
 import { Button } from '@/components/ui/button';
+import CardsKids from '@/components/ui/CardsKids';
+
+
+const cardsKidsData = [
+  {
+  title:"Kids",
+  image:niñosimg,
+  ageRange: 'Niños entre los 6 y 9 años',
+  description: 'Esta categoría pensada para los más chicos busca introducirlos en la generación de soluciones y la experimentación a través de la construcción y el uso de motores con retos especialmente pensados para sus edades.',
+  }
+]
 
 
 const NovaPage: React.FC = () => {
@@ -28,22 +39,29 @@ const NovaPage: React.FC = () => {
           </div>
         </div>
         <div className="flex items-center justify-center bg-gray-100 py-10">
-        <div className="flex one py-5">
-          {/* Left Section */}
-          <div className=" text-white p-5 flex-shrink-0 w-1/2 flex  items-center">
-            <h2 className="text-4xl font-bold">¿QUÉ IMPLEMENTOS <br /> NECESITO PARA <br /> PARTICIPAR?</h2>
-          </div>
+          <div className="flex one py-5">
+            {/* Left Section */}
+            <div className=" text-white p-5 flex-shrink-0 w-1/2 flex  items-center">
+              <h2 className="text-4xl font-bold">¿QUÉ IMPLEMENTOS <br /> NECESITO PARA <br /> PARTICIPAR?</h2>
+            </div>
 
-          {/* Right Section */}
-          <div className="p-5 w-1/2">
-            <p className="text-fondo">
-              El NOVA Champions League ofrece todos los componentes necesarios para hacer los retos el día del evento, 
-              pero en casos en los que los participantes lo requieren, tenemos los kits (solamente los de NOVA Coders) para la venta.
-            </p>
+            {/* Right Section */}
+            <div className="p-5 w-1/2">
+              <p className="text-fondo">
+                El NOVA Champions League ofrece todos los componentes necesarios para hacer los retos el día del evento,
+                pero en casos en los que los participantes lo requieren, tenemos los kits (solamente los de NOVA Coders) para la venta.
+              </p>
+            </div>
           </div>
         </div>
-       
-    </div> <div className="flex dos py-5">
+
+        {
+          cardsKidsData.map((card, index) => (
+            <CardsKids key={index} {...card} />
+          ))
+        }
+
+        <div className="flex dos py-5">
           {/* Left Section */}
           <div className=" text-white p-5 flex-shrink-0 w-1/2 flex  items-center">
             <h2 className="text-4xl font-bold">Inscripciones</h2>
@@ -52,14 +70,14 @@ const NovaPage: React.FC = () => {
           {/* Right Section */}
           <div className="p-5 w-1/2 flex flex-col items-center justify-evenly">
             <p className="text-gray-800 max-w-2xl mt-4">
-            Para inscribirte al NOVA Champions League 
-            debes crear una cuenta en nuestro sitio web y 
-            pagar el valor de la inscripción por vía transferencia o Nequi.
+              Para inscribirte al NOVA Champions League
+              debes crear una cuenta en nuestro sitio web y
+              pagar el valor de la inscripción por vía transferencia o Nequi.
             </p>
             <p className="text-gray-800 max-w-2xl mt-4">
-            Una vez realizado el pago se debe notificar al 
-            Whatsapp <span className='text-ama'>314 257 1564</span> y tras la verificación se 
-            activará la cuenta para acceder a los contenidos del sitio.
+              Una vez realizado el pago se debe notificar al
+              Whatsapp <span className='text-ama'>314 257 1564</span> y tras la verificación se
+              activará la cuenta para acceder a los contenidos del sitio.
             </p>
             <Button variant="destructive" className="bg-fondo z-10 max-w-max py-2 px-4"> Inscripción </Button>
           </div>
