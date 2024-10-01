@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Image from "next/image";
-import Logo from "./imgs/nova champions league.png"
+import Logo from "@/imgs/nova champions league.png"
 
 
 export default function NewAccountForm() {
