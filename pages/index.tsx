@@ -1,69 +1,26 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
-import Logo from "./imgs/nova pilots.png"
-import grup from "./imgs/Group.png"
-import { FaRegUserCircle } from "react-icons/fa";
-import NOVACH from "./imgs/lasos.png"
-import NIÑO from "./imgs/children-playing-with-lego-playing-room.jpg"
-import lego from "./imgs/Rectangle.png"
-import ADone from "./imgs/adone.png"
+import grup from "@/imgs/Group.png"
+import NOVACH from "@/imgs/lasos.png"
+import NIÑO from "@/imgs/children-playing-with-lego-playing-room.jpg"
+import lego from "@/imgs/Rectangle.png"
+import ADone from "@/imgs/adone.png"
 
 
-import { useState } from 'react'
 
-const menuItems = [
-  { id: 1, text: 'Inicio' },
-  { id: 2, text: 'NOVA' },
-  { id: 3, text: 'Kids' },
-  { id: 4, text: 'Pilots' },
-  { id: 5, text: 'Coders' }, { id: 6, text: 'Inscripción' },
-]
-import localFont from "next/font/local";
+
+
+import Footer from "@/components/ui/Footer";
+import AppMenu from "@/components/ui/AppMenu";
 
 
 
 
 export default function Home() {
-  const [activeItem, setActiveItem] = useState<number | null>(null)
   return (<>
 
     <div className=" h-screen text-2xl text-pretty font-bold relative">
-      <nav className="bg-fondo p-4 flex z-10 justify-evenly gap-4 items-center sticky top-0 w-full">
-        <Image src={Logo} alt="Logo" width={200} height={200} />
-        <ul className="flex justify-center space-x-6">
-          {menuItems.map((item) => (
-            <li key={item.id}>
-              <a
-                href={item.text === menuItems[5].text ? "/registro" : "#"}
-                className={`
-                text-white 
-                font-medium 
-                text-lg
-                py-2 
-                px-3 
-                transition-all 
-                duration-300 
-                ease-in-out
-                border-b-2 
-                border-transparent
-                hover:border-yellow-400 
-                hover:text-yellow-400 
-                hover:text-xl
-                ${activeItem === item.id ? 'border-yellow-400 text-yellow-400 text-xl' : ''}
-              `}
-                onMouseEnter={() => setActiveItem(item.id)}
-                onMouseLeave={() => setActiveItem(null)}
-              >
-                {item.text}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <div className="flex justify-center items-center h-20 " >
-
-          <FaRegUserCircle size={90} className="h-lg w-lg text-white" />
-        </div>
-      </nav>
+     <AppMenu/>
       <div className=" flex justify-center items-center h-[65vh] bg-gradient-to-r from-gray-600 from-30 via-gray-400 via-30 to-gray-600 ">
         <Image src={NOVACH} alt="Logo" width={500} height={500} className="h-full w-full " />
 
@@ -137,13 +94,7 @@ export default function Home() {
           <Button variant="destructive" className="bg-ama z-10 w-lg"> <a href="http://ricardobarona.com/" target="_blank" rel="noopener noreferrer">www.ricardobarona.com.co</a></Button>
         </div>
       </div>
-      <footer className="text-center my-4 p-4 bg-fondo text-white">
-        NOVA Champions League
-        <br />
-        2024
-
-      </footer>
-
+     <Footer/>
 
     </div>
   </>

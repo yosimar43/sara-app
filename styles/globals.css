@@ -7,12 +7,24 @@
   --foreground: #171717;
   list-style: none;
 }
+.one{
+  background: #575757;
 
+  background-image: -webkit-linear-gradient(30deg, #575757 45%, #e5edf5 40%);
+}
+.dos{
+  background: #575757;
+
+  background-image: -webkit-linear-gradient(30deg, #575757 30%, #e5edf5 30%);
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+.bg-degradado {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ED8F1B' fill-opacity='1' d='M0,32L40,64C80,96,160,160,240,186.7C320,213,400,203,480,170.7C560,139,640,85,720,53.3C800,21,880,11,960,10.7C1040,11,1120,21,1200,37.3C1280,53,1360,75,1400,85.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z'%3E%3C/path%3E%3C/svg%3E"); 
 }
 
 body {
