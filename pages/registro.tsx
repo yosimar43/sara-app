@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Image from "next/image";
-import Logo from "./imgs/nova pilots.png"
+import Logo from "./imgs/nova champions league.png"
 
 
 export default function NewAccountForm() {
@@ -29,7 +29,7 @@ export default function NewAccountForm() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-sky-800 via-sky-700 to-blue-600">
       <div className="w-full max-w-md p-8 m-4 bg-white rounded-lg shadow-lg">
-      <Image src={Logo} alt="Logo" width={500} height={500}  />
+      <Image src={Logo} alt="Logo" width={300} height={300}  />
         <h2 className="mb-6 text-2xl font-bold text-center text-gray-800">Cuenta Nueva</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="relative">
@@ -39,13 +39,13 @@ export default function NewAccountForm() {
               name="fullName"
               value={formData.fullName}
               onChange={handleChange}
-              className="w-full h-10 px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
+              className="w-full h-10 px-3 bg-fondo py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
               placeholder=" "
               required
             />
             <label
               htmlFor="fullName"
-              className="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-600 transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500"
+              className="absolute left-3 -top-2.5  px-1 text-sm text-white transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-5 peer-focus:text-sm peer-focus:text-black"
             >
               Nombre Completo
             </label>
@@ -57,13 +57,13 @@ export default function NewAccountForm() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full h-10 px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
+              className="w-full h-10 px-3 bg-fondo py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
               placeholder=" "
               required
             />
             <label
               htmlFor="email"
-              className="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-600 transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500"
+              className="absolute left-3 -top-2.5  px-1 text-sm text-white transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-5 peer-focus:text-sm peer-focus:text-black"
             >
               Email
             </label>
@@ -75,13 +75,13 @@ export default function NewAccountForm() {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full h-10 px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
+              className="w-full h-10 px-3 bg-fondo py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
               placeholder=" "
               required
             />
             <label
               htmlFor="password"
-              className="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-600 transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500"
+              className="absolute left-3 -top-2.5  px-1 text-sm text-white transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-5 peer-focus:text-sm peer-focus:text-black"
             >
               Contraseña
             </label>
@@ -93,13 +93,13 @@ export default function NewAccountForm() {
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              className="w-full h-10 px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
+              className="w-full h-10 px-3 bg-fondo py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
               placeholder=" "
               required
             />
             <label
               htmlFor="confirmPassword"
-              className="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-600 transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500"
+              className="absolute left-3 -top-2.5  px-1 text-sm text-white transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-5 peer-focus:text-sm peer-focus:text-black"
             >
               Confirmar Contraseña
             </label>
@@ -111,20 +111,20 @@ export default function NewAccountForm() {
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleChange}
-              className="w-full h-10 px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
+              className="w-full h-10 px-3 bg-fondo py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300 peer"
               placeholder=" "
               required
             />
             <label
               htmlFor="phoneNumber"
-              className="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-600 transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500"
+              className="absolute left-3 -top-2.5  px-1 text-sm text-white transition-all duration-300 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-5 peer-focus:text-sm peer-focus:text-black"
             >
               Número Telefónico
             </label>
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300"
+            className="w-full px-4 py-2 text-white bg-ama rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300"
           >
             Crear Cuenta
           </button>
