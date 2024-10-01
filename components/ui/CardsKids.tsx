@@ -18,7 +18,6 @@ const CardsKids: React.FC<Props> = ({ ageRange, description, image, title }) => 
 
                 {/* Content Section */}
                 <div className="flex flex-col md:flex-row bg-white  shadow-md overflow-hidden">
-                    {/* Left Section with Image */}
                     <div className="relative w-[45%] bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
                         <div className="absolute inset-0 bg-blue-900 bg-opacity-50 flex items-center justify-center">
                             <Image

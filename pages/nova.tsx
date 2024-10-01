@@ -9,11 +9,24 @@ import CardsKids from '@/components/ui/CardsKids';
 
 const cardsKidsData = [
   {
-  title:"Kids",
-  image:niñosimg,
-  ageRange: 'Niños entre los 6 y 9 años',
-  description: 'Esta categoría pensada para los más chicos busca introducirlos en la generación de soluciones y la experimentación a través de la construcción y el uso de motores con retos especialmente pensados para sus edades.',
-  }
+    title: "Kids",
+    image: niñosimg,
+    ageRange: 'Niños entre los 6 y 9 años',
+    description: 'Esta categoría pensada para los más chicos busca introducirlos en la generación de soluciones y la experimentación a través de la construcción y el uso de motores con retos especialmente pensados para sus edades.',
+  },
+  {
+    title: "pilots",
+    image: niñosimg,
+    ageRange: 'Niños entre los 10 y 12 años.',
+    description: 'Esta categoría busca impactar positivamente en la generación de soluciones y la experimentación a través de la construcción y el uso de motores con retos especialmente pensados para sus edades.',
+  },
+  {
+    title: "coders",
+    image: niñosimg,
+    ageRange: 'Jóvenes entre los 13 y 18 años.',
+    description: 'Esta categoría busca impactar positivamente en la generación de soluciones y la experimentación a través de la construcción, programación y el uso de motores con retos especialmente pensados para sus edades.',
+  },
+
 ]
 
 
