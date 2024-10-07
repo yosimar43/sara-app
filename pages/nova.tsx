@@ -33,7 +33,7 @@ const cardsKidsData = [
 const NovaPage: React.FC = () => {
   return (
     <>
-      <div className=" h-screen text-2xl text-pretty font-bold relative">
+      <div className=" h-screen text-2xl text-pretty font-bold ">
         <AppMenu />
         <div className="relative h-[75vh] w-full overflow-hidden" >
           <Image
@@ -51,7 +51,7 @@ const NovaPage: React.FC = () => {
             <p className='max-w-xl text-xl'></p>
           </div>
         </div>
-        <div className="flex items-center justify-center bg-gray-100 py-10">
+        <div className="flex items-center justify-center bg-gray-100 pt-10">
           <div className="flex one py-5">
             {/* Left Section */}
             <div className=" text-white p-5 flex-shrink-0 w-1/2 flex  items-center">
