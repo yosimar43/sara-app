@@ -12,7 +12,7 @@ const HeroImage: React.FC<HeroImageProps> = ({ src, alt,logo }) => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-1/2 h-1/2">
         <Image src={logo} alt="Logo" layout="fill"
         objectFit="cover"
-        className="object-cover" />
+        className="object-cover -z-0" />
       </div>
 
       <Image

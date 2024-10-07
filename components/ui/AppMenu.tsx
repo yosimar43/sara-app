@@ -17,7 +17,7 @@ interface AppMenuProps {}
 const AppMenu: React.FC<AppMenuProps> = () => {
     const [activeItem, setActiveItem] = useState<number | null>(null)
   return (
-    <nav className="bg-fondo p-4 flex z-10 justify-evenly gap-4 items-center sticky top-0 w-full">
+    <nav className="bg-fondo p-4 flex z-30 justify-evenly gap-4 items-center sticky top-0 w-full">
     <Image src={Logo} alt="Logo" width={200} height={200} />
     <ul className="flex justify-center space-x-6">
       {menuItems.map(({id,url,text}) => (
