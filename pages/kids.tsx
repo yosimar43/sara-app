@@ -53,7 +53,7 @@ export default function Kids() {
             <AppMenu />
             <HeroImage src={NIÑO.src} alt={"hola"} logo={NOVACH.src} />
             <DescriptionCurse {...idata} />
-            <GridsCards color="bg-blue-400" list={gridcarddata} />
+            <GridsCards color=" bg-blue-400" list={gridcarddata} />
             <Footer />
         </div>
     );
