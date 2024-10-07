@@ -15,7 +15,7 @@ const GridCards: React.FC<GridCardsProps> = ({ list, color }) => {
             {
                 list.map(({ title, description, imageSrc }) => (
                     <div className="bg-white p-4 mx-auto">
-                        <img src={imageSrc} alt={title} className="w-[70%] y-1/2 mx-auto" />
+                        <img src={imageSrc} alt={title} className="w-[55%] y-1/2 mx-auto" />
                         <h3>{title}</h3>
                         <p>{description}</p>
                     </div>))
