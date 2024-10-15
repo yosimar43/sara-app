@@ -48,13 +48,14 @@ let gridcarddata = [
 
 
 export default function Kids() {
-    return (
-        <div className='flex flex-col '>
+    return (<>
             <AppMenu />
+        <div className='flex flex-col mt-10 '>
             <HeroImage src={NIÑO.src} alt={"hola"} logo={NOVACH.src} />
             <DescriptionCurse {...idata} />
             <GridsCards color=" bg-blue-400" list={gridcarddata} />
             <Footer />
         </div>
+    </>
     );
 }

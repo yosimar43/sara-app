@@ -19,7 +19,7 @@ const CardsKids: React.FC<PropsCard> = ({ ageRange, description, image, title ,c
                                 src={image}
                                 alt="Background Image"
                                 layout="fill"
-                                objectFit="cover"
+                                objectFit="fill"
                                 className="absolute inset-0 z-0"
                             />
                         </div>

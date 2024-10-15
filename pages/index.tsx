@@ -19,16 +19,16 @@ import AppMenu from "@/components/ui/AppMenu";
 export default function Home() {
   return (<>
 
-    <div className=" h-screen text-2xl text-pretty font-bold relative">
+    <div className=" h-screen text-2xl text-pretty font-bold relative bg-white">
       <AppMenu />
       <div className=" flex justify-center items-center h-[65vh] bg-gradient-to-r from-gray-600 from-30 via-gray-400 via-30 to-gray-600 ">
         <Image src={NOVACH} alt="Logo" width={500} height={500} className="h-full w-full " />
 
       </div>
       <div className="flex flex-col h-[70vh] justify-center items-center  gap-6 bg-fondo relative">
-        <div className="absolute top-0 left-0 right-0 w-full h-[70%] bg-white rounded-b-full"></div>
+        <div className="absolute top-4 left-0 right-0 w-full h-[70%] bg-white rounded-b-full "></div>
         <p className="z-10 text-gray-700 text-5xl">¿Qué es <span className="text-ama">NOVA</span> Champions League?</p>
-        <p className="max-w-md color z-10 text-gray-900  text-xl font-bold ">
+        <p className="max-w-md color z-10 text-gray-900  text-xl font-bold py-4 ">
           NOVA Champions League es un torneo de robótica en la que niños y jóvenes se ponen a prueba en retos aleatorios,
           donde el tra-bajo en equipo, el manejo de las emocio-nes, la creatividad, el ingenio y la inventiva, les permiten alcanzar nuevos niveles.
         </p>
@@ -38,7 +38,7 @@ export default function Home() {
       <div className="h-[50vh] flex text-center ">
         <div className="w-[40%]  relative">
           <Image src={NIÑO} layout="fill" alt="niño"
-            objectFit="cover"
+            objectFit="fill"
             className="w-full absolute" />
         </div>
         <div className="w-[60%] bg-ama flex flex-col text-xl justify-evenly items-center ">
@@ -73,7 +73,7 @@ export default function Home() {
 
         </div><div className="w-[40%]  relative">
           <Image src={lego}  layout="fill" alt="niño"
-            objectFit="cover"
+            objectFit="fill"
             className="w-full absolute" /> 
         </div>
       </div>

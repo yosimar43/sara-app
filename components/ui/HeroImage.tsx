@@ -8,10 +8,10 @@ interface HeroImageProps {
 
 const HeroImage: React.FC<HeroImageProps> = ({ src, alt,logo }) => {
   return (
-    <div className="relative h-[50vh]">
+    <div className="relative h-[80vh]">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-1/2 h-1/2">
         <Image src={logo} alt="Logo" layout="fill"
-        objectFit="cover"
+        objectFit="contain"
         className="object-cover -z-0" />
       </div>
 
@@ -19,7 +19,7 @@ const HeroImage: React.FC<HeroImageProps> = ({ src, alt,logo }) => {
         src={src}
         alt={alt}
         layout="fill"
-        objectFit="cover"
+        objectFit="fill"
         className="object-cover"
       />
     </div>
