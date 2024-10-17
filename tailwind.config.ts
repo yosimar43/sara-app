@@ -12,6 +12,7 @@ const config: Config = {
   		colors: {
 			fondo:" #0D638D",
 			ama:" #ED8F1B",
+			novaNaranja:" #FFB15C",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

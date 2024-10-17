@@ -7,6 +7,8 @@ export interface descriptionCurseProps {
     src: string
 }
 
+
+
 const DescriptionCurse: React.FC<descriptionCurseProps> = ({ description, list, src }) => {
     return (
         <div className="flex w-full min-h-fit">
@@ -15,16 +17,16 @@ const DescriptionCurse: React.FC<descriptionCurseProps> = ({ description, list, 
                     src={src}
                     alt="logos"
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="fill"
                     className="object-cover "
                 />
             </div>
             <div className="w-1/2 flex items-center justify-center min-h-max h-[50vh] bg-gray-600 p-4  text-white">
                 <div>
-                    <h2 className="text-3xl font-bold mb-4 text-center ">
+                    <h2 className="text-xl font-bold mb-4 text-center ">
                         {description}
                     </h2>
-                    <ul className="list-none pl-6 text-center">
+                    <ul className="list-none pl-6 text-left">
                         {
                             list.map((item, index) => (
                                 <li key={index}>{item}</li>

@@ -7,9 +7,6 @@ import lego from "@/imgs/Rectangle.png"
 import ADone from "@/imgs/adone.png"
 
 
-
-
-
 import Footer from "@/components/ui/Footer";
 import AppMenu from "@/components/ui/AppMenu";
 

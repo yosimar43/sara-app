@@ -38,9 +38,9 @@ const cardsKidsData: PropsCard[] = [
 const NovaPage: React.FC = () => {
   return (
     <>
-      <div className=" h-screen text-2xl text-pretty font-bold ">
         <AppMenu />
-        <div className=" h-[75vh] w-full overflow-hidden flex flex-col justify-end " >
+      <div className=" h-screen text-2xl text-pretty font-bold ">
+        <div className=" h-[85vh] w-full overflow-hidden flex flex-col justify-end " >
           <Image
             src={niñosimg}
             alt="Background Image"
@@ -50,9 +50,9 @@ const NovaPage: React.FC = () => {
           />
 
 
-          <div className="relative w-full h-1/3 bg-ama  flex items-center justify-evenly flex-col text-white">
-            <p className="text-5xl "> ¿Quiénes pueden participar?</p>
-            <p className='max-w-xl text-xl'>Todos pueden participar incluso sin conocimientos previos. <br />
+          <div className="relative w-full min-h-1/3 h-max py-2 bg-ama  flex items-center justify-evenly flex-col text-white">
+            <p className="text-5xl my-2 "> ¿Quiénes pueden participar?</p>
+            <p className='max-w-xl text-xl '>Todos pueden participar incluso sin conocimientos previos. <br />
               El NOVA Champions League cuenta con información en el sitio web para el entrenamiento previo y se hacen conexiones con los colegios y profes que apoyan el proceso para mejores resultados. </p>
             <p className='max-w-xl text-xl'></p>
           </div>
