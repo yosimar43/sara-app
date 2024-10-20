@@ -11,6 +11,9 @@ import Footer from "@/components/ui/Footer";
 import CarroURugaimga from "@/imgs/kids/CarrpUruga.jpg"
 import Carro2 from "@/imgs/kids/cardKidsCaja.jpeg"
 import carro3 from "@/imgs/kids/kidsCarr.jpeg"
+import futbolPilots from "@/imgs/pilots/futbolPilots.jpg"
+import cable from "@/imgs/pilots/cable.jpg"
+
 
 let idata: descriptionCurseProps = {
 
@@ -50,17 +53,17 @@ let gridcarddata = [
         description: `En este reto debes construir un vehiculo que llevara un objecto esferíco liviano desde el punto A al punto B sin caerse en el menor tiempo posible.      `
     },   
      {
-        imageSrc: 'elevatorPilotsImage.jpg',  // Reemplaza con la ruta correcta de la imagen
+        imageSrc: futbolPilots.src,  // Reemplaza con la ruta correcta de la imagen
         title: 'FÚTBOL PILOTS:',
         description: 'En este reto debes construir un vehículo que pueda controlar una pelota  para ganar a tus adversarios en un partido de fútbol.'
       },
     {
-        imageSrc: 'dropPilotsImage.jpg',  // Reemplaza con la ruta correcta de la imagen
+        imageSrc: cable.src,  // Reemplaza con la ruta correcta de la imagen
         title: 'DROP PILOTS',
         description: 'En este reto tu objetivo es construir un vehículo que con la mayor precisión posible tumbe un objeto que se encuentra en una columna sin tumbar la columna.'
       },
       {
-        imageSrc: 'cablewayPilotsImage.jpg',  // Reemplaza con la ruta correcta de la imagen
+        imageSrc: cable.src,  // Reemplaza con la ruta correcta de la imagen
         title: 'CABLEWAY PILOTS',
         description: 'En este reto debes construir un funicular que recorra un cable elevado en el menor tiempo posible.'
       },
@@ -80,7 +83,7 @@ export default function Pilots() {
         <div className='flex flex-col  '>
             <HeroImage src={NIÑO.src} alt={"hola"} logo={PilostLogo.src} />
             <DescriptionCurse {...idata} />
-            <GridsCards color=" bg-green-400" list={gridcarddata} />
+            <GridsCards color=" bg-orange-500" list={gridcarddata} />
             <Footer />
         </div>
     </>

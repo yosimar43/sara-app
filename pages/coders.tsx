@@ -87,7 +87,7 @@ export default function Coders() {
         <div className='flex flex-col  '>
             <HeroImage src={NIÑO.src} alt={"hola"} logo={CodersLogo.src} />
             <DescriptionCurse {...idata} />
-            <GridsCards color=" bg-blue-400" list={gridcarddata} />
+            <GridsCards color=" bg-cyan-400" list={gridcarddata} />
             <Footer />
         </div>
     </>
