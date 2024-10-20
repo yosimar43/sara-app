@@ -2,8 +2,8 @@
 import AppMenu from "@/components/ui/AppMenu";
 import HeroImage from "@/components/ui/HeroImage";
 import NIÑO from "@/imgs/children-playing-with-lego-playing-room.jpg"
-import NOVACH from "@/imgs/Downloads/nova kids.png"
-import niños from "@/imgs/Downloads/NiñoSentadosKids.jpg"
+import PilostLogo from "@/imgs/pilots/nova pilots.png"
+import niños from "@/imgs/pilots/heroImage.jpg"
 import DescriptionCurse, { descriptionCurseProps } from "@/components/ui/DescriptionCurse";
 import GridsCards from "@/components/ui/GridCards";
 import Footer from "@/components/ui/Footer";
@@ -35,7 +35,7 @@ let gridcarddata = [
     },
     {
         imageSrc: carro3.src,
-        title: "RACE Pilots:",
+        title: "RACE PILOTS:",
         description: `En este reto debes construir el vehículo más rápido que puedas para 
         competir contra tus adversarios en 
         el circuito.`
@@ -46,12 +46,12 @@ let gridcarddata = [
         description: `En este reto debes construir un vehi-culo para salir lo más rápido posible del laberinto        `
     }, {
         imageSrc: carro3.src,
-        title: "LIGHT LOAD Pilots::",
+        title: "LIGHT LOAD PILOTS:",
         description: `En este reto debes construir un vehiculo que llevara un objecto esferíco liviano desde el punto A al punto B sin caerse en el menor tiempo posible.      `
     },   
      {
         imageSrc: 'elevatorPilotsImage.jpg',  // Reemplaza con la ruta correcta de la imagen
-        title: 'FÚTBOL Pilots:',
+        title: 'FÚTBOL PILOTS:',
         description: 'En este reto debes construir un vehículo que pueda controlar una pelota  para ganar a tus adversarios en un partido de fútbol.'
       },
     {
@@ -78,7 +78,7 @@ export default function Pilots() {
     return (<>
         <AppMenu />
         <div className='flex flex-col  '>
-            <HeroImage src={NIÑO.src} alt={"hola"} logo={NOVACH.src} />
+            <HeroImage src={NIÑO.src} alt={"hola"} logo={PilostLogo.src} />
             <DescriptionCurse {...idata} />
             <GridsCards color=" bg-green-400" list={gridcarddata} />
             <Footer />
